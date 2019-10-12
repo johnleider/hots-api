@@ -1,6 +1,6 @@
 {
   "name": "hots-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An interface for hotsapi.net",
   "main": "index.js",
   "author": "John Leider <john@vuetifyjs.com>",
