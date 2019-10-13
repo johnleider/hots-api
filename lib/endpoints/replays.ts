@@ -1,6 +1,6 @@
-import { API } from '../api'
+import { Endpoint } from './endpoint'
 
-class Replay extends API {
+class Replays extends Endpoint {
   all (params: ReplayListRequestParameters): Promise<Replay[]> {
     return this.client.get('/replays', params)
   }
@@ -18,4 +18,4 @@ class Replay extends API {
   }
 }
 
-export { Replay }
+export { Replays }

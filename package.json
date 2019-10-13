@@ -2,14 +2,13 @@
   "name": "hots-api",
   "version": "0.0.1",
   "description": "An interface for hotsapi.net",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "John Leider <john@vuetifyjs.com>",
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@types/node-fetch": "^2.5.2",
     "tslint": "^5.20.0",
     "typescript": "^3.6.4",
     "typestrict": "^1.0.2"

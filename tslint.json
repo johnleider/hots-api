@@ -1,7 +1,23 @@
 {
     "defaultSeverity": "error",
     "extends": "typestrict",
+    "linterOptions": {
+      "exclude": [
+        "**/*.spec.js",
+        "**/node_modules/**/*"
+      ]
+    },
     "jsRules": {},
-    "rules": {},
+    "rules": {
+      "quotemark": [true, "single"],
+      "semicolon": [true, "never"],
+      "trailing-comma": [
+        true,
+        {
+          "multiline": "always",
+          "singleline": "never"
+        }
+      ]
+    },
     "rulesDirectory": []
 }

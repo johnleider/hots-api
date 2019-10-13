@@ -1,16 +1,13 @@
-// Imports
-import fetch from 'node-fetch'
-
 class Client {
   private base: string
-  private options: FetchOptions
+  private options: RequestInit = {}
 
-  constructor (base: string, options: FetchOptions = {}) {
+  constructor (base: string, options = {}) {
     this.base = base
     this.options = options
   }
 
-  buildQuery (parameters: RequestParameters) {
+  buildQuery (parameters: RequestParameters = {}) {
     const query = []
 
     for (const key in parameters) {
@@ -28,13 +25,12 @@ class Client {
     return this.request(url, 'POST', parameters)
   }
 
-  request (url: string, method = 'GET', parameters: RequestParameters) {
+  request (url: string, method = 'GET', parameters?: RequestParameters) {
+    const query = this.buildQuery(parameters)
+
     return fetch(
-      `${this.base}/${url}${this.buildQuery(parameters)}`,
-      {
-        method,
-        ...this.options
-      }
+      `${this.base}/${url}${query}`,
+      { method, ...this.options },
     ).then(res => res.json())
   }
 }

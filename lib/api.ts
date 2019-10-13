@@ -1,4 +1,11 @@
 import { Client } from './request'
+import {
+  Heroes,
+  Maps,
+  Replays,
+  Talents,
+} from './endpoints'
+
 
 class API {
   private version = 1
@@ -6,8 +13,19 @@ class API {
 
   protected client: Client
 
+  public heroes: Heroes
+  public maps: Maps
+  public replays: Replays
+  public talents: Talents
+
   constructor () {
-    this.client = new Client(this.base)
+    const client = new Client(this.base)
+
+    this.client = client
+    this.heroes = new Heroes(client)
+    this.maps = new Maps(client)
+    this.replays = new Replays(client)
+    this.talents = new Talents(client)
   }
 }
 

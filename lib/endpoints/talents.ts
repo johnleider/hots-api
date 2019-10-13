@@ -1,6 +1,6 @@
-import { API } from "../api";
+import { Endpoint } from './endpoint'
 
-class Talents extends API {
+class Talents extends Endpoint {
   find (talent: string): Promise<Talent> {
     return this.client.get(`/talents/${talent}`)
   }

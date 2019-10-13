@@ -1,6 +1,6 @@
-import { API } from '../api'
+import { Endpoint } from './endpoint'
 
-class Heroes extends API {
+class Heroes extends Endpoint {
   all (): Promise<Hero[]> {
     return this.client.get('/heroes')
   }
