@@ -6,7 +6,6 @@ import {
   Talents,
 } from './endpoints'
 
-
 class API {
   private version = 1
   private base = `https://hotsapi.net/api/v${this.version}`
