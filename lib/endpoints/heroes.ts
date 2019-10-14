@@ -1,9 +1,11 @@
-// Classe
+// Classes
 import { Endpoint } from './endpoint'
 
 // Types
-import { Ability } from '../../types/ability'
-import { Hero } from '../../types/hero'
+import {
+  Ability,
+  Hero,
+} from '../../types'
 
 class Heroes extends Endpoint {
   abilities (hero: string): Promise<Ability[]> {

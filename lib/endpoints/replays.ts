@@ -1,4 +1,13 @@
+// Classes
 import { Endpoint } from './endpoint'
+
+// Types
+import {
+  Replay,
+  ReplayListRequestParameters,
+  ReplayPostRequestParameters,
+  UploadResponse,
+} from '../../types'
 
 class Replays extends Endpoint {
   all (params: ReplayListRequestParameters): Promise<Replay[]> {

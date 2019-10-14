@@ -1,10 +1,13 @@
-import { Client } from './request'
+// Endpoints
 import {
   Heroes,
   Maps,
   Replays,
   Talents,
 } from './endpoints'
+
+// Types
+import { Client } from './request'
 
 class API {
   private version = 1

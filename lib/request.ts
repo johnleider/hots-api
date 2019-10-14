@@ -1,3 +1,6 @@
+// Types
+import { RequestParameters } from '../types'
+
 class Client {
   private base: string
   private options: RequestInit = {}

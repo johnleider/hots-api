@@ -1,3 +1,4 @@
+// Types
 import { Client } from '../request'
 
 abstract class Endpoint {
