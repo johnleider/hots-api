@@ -1,4 +1,4 @@
-interface UploadResponse {
+export interface UploadResponse {
   success: string
   error: string
   status: string

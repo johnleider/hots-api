@@ -1,4 +1,4 @@
-interface Score {
+export interface Score {
   level: number
   kills: number
   assists: number

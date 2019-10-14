@@ -1,4 +1,7 @@
-interface Player {
+import { Score } from './score'
+import { Talent } from './talent'
+
+export interface Player {
   battletag: string
   hero: string
   hero_level: number

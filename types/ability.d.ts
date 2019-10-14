@@ -1,4 +1,4 @@
-interface Ability {
+export interface Ability {
   owner: string
   name: string
   title: string

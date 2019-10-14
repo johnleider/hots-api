@@ -1,4 +1,4 @@
-interface Team {
+export interface Team {
   winner: boolean
   team_level: number
   structure_xp: number

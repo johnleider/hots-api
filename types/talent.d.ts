@@ -1,4 +1,4 @@
-interface Talent {
+export interface Talent {
   name: string
   title: string
   description: string

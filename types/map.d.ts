@@ -1,4 +1,4 @@
-interface HMap {
+export interface HMap {
   name: string
   translations: string[]
 }

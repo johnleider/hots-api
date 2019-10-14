@@ -1,6 +1,15 @@
+// Classe
 import { Endpoint } from './endpoint'
 
+// Types
+import { Ability } from '../../types/ability'
+import { Hero } from '../../types/hero'
+
 class Heroes extends Endpoint {
+  abilities (hero: string): Promise<Ability[]> {
+    return this.client.get(`heroes/${hero}/abilities`)
+  }
+
   ability (hero: string, ability: string): Promise<Ability> {
     return this.client.get(`heroes/${hero}/abilities/${ability}`)
   }

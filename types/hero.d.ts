@@ -1,4 +1,6 @@
-interface Hero {
+import { Ability } from './ability'
+import { Talent } from './talent'
+export interface Hero {
   name: string
   short_name: string
   attribute_id: string
